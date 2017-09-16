@@ -1,5 +1,14 @@
+/**
+ * FindGuitarTester class tests the functionalities
+ * @author divyalurdukasu
+ * @version 1.0
+ * @since 09-13-2017
+ */
 public class FindGuitarTester {
-
+	/**
+     * 
+     * @param args
+     */
   public static void main(String[] args) {
     // Set up Rick's guitar inventory
     Inventory inventory = new Inventory();
@@ -19,7 +28,10 @@ public class FindGuitarTester {
       System.out.println("Sorry, Erin, we have nothing for you.");
     }
   }
-
+  /**
+   * This method adds guitars to the inventory
+   * @param inventory
+   */
   private static void initializeInventory(Inventory inventory) {
     inventory.addGuitar("11277", 3999.95, "Collings", "CJ", "acoustic",
                         "Indian Rosewood", "Sitka");
