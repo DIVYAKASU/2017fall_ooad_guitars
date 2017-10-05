@@ -1,23 +1,30 @@
+
 /**
- * @author divyalurdukasu
- * @version 1.0
- * @since 09-13-2017
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1  
+ * @Version 1.0 
+ * Student: Divya Kasu
+ * @since 09-25-2017
+ * Holds all the characteristics of guitar
  */
 public class Guitar {
 
   private String serialNumber, builder, model, type, backWood, topWood;
+
   private double price;
-  /**
-  *
-  * @param serialNumber
-  * @param price
-  * @param builder
-  * @param model
-  * @param type
-  * @param backWood
-  * @param topWood
-  */
-  public Guitar(String serialNumber, double price,
+
+    /**
+     * Constructor guitar creates new guitar
+     * @param serialNumber the Guitar serial number
+     * @param price the Guitar price
+     * @param builder the Guitar builder
+     * @param model the Guitar model
+     * @param type the Guitar type
+     * @param backWood the wood used to cover back part of the Guitar
+     * @param topWood the wood used to cover front part of the Guitar
+     */
+    public Guitar(String serialNumber, double price,
                 String builder, String model, String type,
                 String backWood, String topWood) {
     this.serialNumber = serialNumber;
@@ -28,60 +35,68 @@ public class Guitar {
     this.backWood = backWood;
     this.topWood = topWood;
   }
-  /**
-  *
-  * @return serialNumber
-  */
-  public String getSerialNumber() {
+
+    /**
+     * Gets the Guitar serial number
+     * 
+     */
+    public String getSerialNumber() {
     return serialNumber;
   }
-  /**
-  *
-  * @return price
-  */
-  public double getPrice() {
+
+    /**
+     *
+     * Gets the Guitar price
+     */
+    public double getPrice() {
     return price;
   }
-  /**
-  *
-  * @param newPrice
-  */
-  public void setPrice(float newPrice) {
+
+    /**
+     * Sets new price to the Guitar
+     * @param newPrice for the Guitar
+     */
+    public void setPrice(float newPrice) {
     this.price = newPrice;
   }
-  /**
-  *
-  * @return builder
-  */
-  public String getBuilder() {
+
+    /**
+     *
+     * Gets the Guitar builder
+     */
+    public String getBuilder() {
     return builder;
   }
-  /**
-  *
-  * @return model
-  */
-  public String getModel() {
+
+    /**
+     *
+     * Gets the Guitar model
+     */
+    public String getModel() {
     return model;
   }
-  /**
-  *
-  * @return type
-  */
-  public String getType() {
+
+    /**
+     *
+     * Gets the Guitar type
+     */
+    public String getType() {
     return type;
   }
-  /**
-  *
-  * @return backWood
-  */
-  public String getBackWood() {
+
+    /**
+     *
+     * Gets the Guitar backWood
+     */
+    public String getBackWood() {
     return backWood;
   }
-  /**
-  *
-  * @return topWood
-  */
-  public String getTopWood() {
+
+    /**
+     *
+     * Gets the Guitar topWood
+     */
+    public String getTopWood() {
     return topWood;
   }
 }

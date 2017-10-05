@@ -1,21 +1,29 @@
+
 /**
- * FindGuitarTester class tests the functionalities
- * @author divyalurdukasu
- * @version 1.0
- * @since 09-13-2017
+ * FindGuitarTester class tests the functionalities in the inventory with required guitar specifications and prints the matching guitar
+ *
+ * Class: Object-Oriented Design and Analysis
+ * Professor: Orlando Montalvo
+ * Assignment: HW 1  
+ * @Version 1.0 
+ * Student: Divya Kasu
+ * @since 09-25-2017
  */
 public class FindGuitarTester {
-	/**
-     * 
-     * @param args
+
+    /**
+     * Runs a short test using Erin as a user
+     * @param args unused
      */
-  public static void main(String[] args) {
+    public static void main(String[] args) {
     // Set up Rick's guitar inventory
     Inventory inventory = new Inventory();
     initializeInventory(inventory);
 
-    Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", 
-                                      "electric", "Alder", "Alder");
+   Guitar whatErinLikes = new Guitar("", 0, "fender", "Stratocastor", 
+                                  "electric", "Alder", "Alder");
+    
+  
     Guitar guitar = inventory.search(whatErinLikes);
     if (guitar != null) {
       System.out.println("Erin, you might like this " +
@@ -28,11 +36,12 @@ public class FindGuitarTester {
       System.out.println("Sorry, Erin, we have nothing for you.");
     }
   }
-  /**
-   * This method adds guitars to the inventory
-   * @param inventory
-   */
-  private static void initializeInventory(Inventory inventory) {
+
+    /**
+     * adds all the guitars to the inventory
+     * @param inventory stores all the guitars
+     */
+    private static void initializeInventory(Inventory inventory) {
     inventory.addGuitar("11277", 3999.95, "Collings", "CJ", "acoustic",
                         "Indian Rosewood", "Sitka");
     inventory.addGuitar("V95693", 1499.95, "Fender", "Stratocastor", "electric",
